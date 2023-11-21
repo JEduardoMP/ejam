@@ -1,0 +1,49 @@
+#root {
+  text-align: center;
+
+  --primary: rgba(255, 255, 255, 1);
+  --secundary: rgba(37, 47, 61, 1);
+
+  --primaryText: rgba(0, 0, 0, 1);
+  --secundaryText: rgba(44, 126, 248, 1);
+  --secundaryLight: rgba(237, 243, 253, 1);
+}
+
+*,
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+h1, h2, h4 {
+  font-weight: 400;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
